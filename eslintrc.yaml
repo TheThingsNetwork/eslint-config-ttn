@@ -222,7 +222,7 @@ rules:
     - js: never
 
   # Prefer defaul export for signle export
-  import/prefer-defaul-export:
+  import/prefer-default-export:
     - warn
 
   # Use double quotes in jsx
