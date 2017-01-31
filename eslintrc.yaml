@@ -241,10 +241,6 @@ rules:
   keyword-spacing:
     - error
 
-  # DO not allow more than 2 chained calls per line
-  newline-per-chained-call:
-    - error
-
   # Disallow alert
   no-alert:
     - error
