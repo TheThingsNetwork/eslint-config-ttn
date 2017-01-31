@@ -361,7 +361,7 @@ rules:
     - warn
 
   # Prevent missing parentheses around multilines JSX (fixable)
-  react/wrap-multilines:
+  react/jsx-wrap-multilines:
     - error
 
   # Enforce boolean attributes notation in JSX (fixable)
@@ -410,14 +410,11 @@ rules:
 
   # Handles async/await functions correctly
   generator-star-spacing:
-    - off
-
-  babel/generator-star-spacing:
     - error
     - both
 
   # Handles destructuring arrays with flow type in function parameters
-  babel/array-bracket-spacing:
+  array-bracket-spacing:
     - error
     - always
     - arraysInArrays: false
@@ -430,8 +427,9 @@ rules:
       objectsInObjects: false
 
   # doesn't fail when using object spread (...obj)
-  babel/object-shorthand:
+  object-shorthand:
     - error
+
   # guard against awaiting async functions inside of a loop
   babel/no-await-in-loop:
     - error
