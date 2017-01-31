@@ -283,10 +283,6 @@ rules:
   no-extra-bind:
     - error
 
-  # Disallow superflouous parentheses
-  no-extra-parens:
-    - warn
-
   # Disallow faulty function assignments
   no-func-assign:
     - error
@@ -574,9 +570,6 @@ rules:
 
   # Require or disallow a space before function opening parenthesis
   space-before-function-paren:
-    - error
-
-  space-in-parens:
     - error
 
   space-infix-ops:
