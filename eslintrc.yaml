@@ -18,6 +18,7 @@ globals:
 plugins:
   - react
   - babel
+  - import
   - no-unused-vars-rest
 
 # enable all language features
@@ -196,6 +197,33 @@ rules:
     - 2
     - SwitchCase: 0
       MemberExpression: 1
+
+
+  # Put all imports first
+  import/first:
+    - error
+
+  # Avoid amd-style import/export
+  import/no-amd:
+    - error
+
+  # Avoid commonjs style import/export
+  import/no-commonjs:
+    - error
+
+  # Avoid duplicate imports
+  import/no-duplicates:
+    - error
+
+  # Avoid/force extensions
+  import/extensions:
+    - error
+    - always
+    - js: never
+
+  # Prefer defaul export for signle export
+  import/prefer-defaul-export:
+    - warn
 
   # Use double quotes in jsx
   jsx-quotes:
