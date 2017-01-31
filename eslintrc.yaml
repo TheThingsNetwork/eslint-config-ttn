@@ -434,4 +434,4 @@ rules:
   babel/no-await-in-loop:
     - error
 
-# # vim: ft=yaml
+# vim: ft=yaml
