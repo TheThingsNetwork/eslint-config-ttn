@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ttn",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Eslint config for use within The Things Network",
   "main": "index.js",
   "author": "Romeo Van Snick <romeo@thethingsnetwork.org>",

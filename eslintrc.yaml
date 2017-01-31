@@ -211,10 +211,6 @@ rules:
   import/no-commonjs:
     - error
 
-  # Avoid duplicate imports
-  import/no-duplicates:
-    - error
-
   # Avoid/force extensions
   import/extensions:
     - error
