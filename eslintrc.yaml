@@ -465,6 +465,14 @@ rules:
   prefer-spread:
     - error
 
+  # Prefer template strings instead of concatenation
+  prefer-template:
+    - warn
+
+  # Avoid useless string concatenation
+  no-useless-concat:
+    - error
+
   # Require quotes around object literal property names
   quote-props:
     - error
