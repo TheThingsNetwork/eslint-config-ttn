@@ -432,6 +432,7 @@ rules:
   object-curly-newline:
     - error
     - multiline: true
+      minProperties: 1
 
   # doesn't fail when using object spread (...obj)
   object-shorthand:
