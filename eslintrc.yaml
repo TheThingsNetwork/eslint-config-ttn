@@ -128,7 +128,7 @@ rules:
       objectsInObjects: false
 
   # Guard against awaiting async functions inside of a loop
-  babel/no-await-in-loop:
+  no-await-in-loop:
     - warn
 
   # Force spacing in single line blocks
