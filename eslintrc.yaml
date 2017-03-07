@@ -241,12 +241,6 @@ rules:
   no-alert:
     - error
 
-  # Disallow console.log
-  no-console:
-    - error
-    - allow:
-        - warn
-
   # Disallow if (true) and if (false)
   no-constant-condition:
     - error
