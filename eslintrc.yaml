@@ -21,6 +21,12 @@ plugins:
   - import
   - no-unused-vars-rest
 
+settings:
+  import/resolver:
+    eslint-config-ttn/resolver:
+      alias:
+        "~": src
+
 # enable all language features
 parserOptions:
   ecmaFeatures:
@@ -198,18 +204,45 @@ rules:
     - SwitchCase: 0
       MemberExpression: 1
 
+  # Make sure default is present when required
+  import/default:
+    - error
 
   # Put all imports first
   import/first:
+    - error
+
+  # Report invalid exports
+  import/export:
     - error
 
   # Avoid amd-style import/export
   import/no-amd:
     - error
 
+  # Make sure names exist
+  import/named:
+    - error
+
+  # Make sure deferenced items of a namespace import exist
+  import/namespace:
+    - error
+
   # Avoid commonjs style import/export
   import/no-commonjs:
     - error
+
+  # Avoid duplicate imports of the same module
+  import/no-duplicates:
+    - error
+
+  # Avoid unresolvable imports
+  import/no-unresolved:
+    - error
+
+  # Warn about import order
+  import/order:
+    - warn
 
   # Avoid/force extensions
   import/extensions:
