@@ -21,6 +21,12 @@ plugins:
   - import
   - no-unused-vars-rest
 
+settings:
+  import/resolver:
+    eslint-config-ttn/resolver:
+      alias:
+        "~": src
+
 # enable all language features
 parserOptions:
   ecmaFeatures:
