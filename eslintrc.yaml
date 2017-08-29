@@ -442,6 +442,7 @@ rules:
   # Disallow use of variables before they are defined
   no-use-before-define:
     - warn
+    - functions: false
 
   # Disallow var
   no-var:
