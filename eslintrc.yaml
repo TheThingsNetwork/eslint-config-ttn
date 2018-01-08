@@ -405,7 +405,7 @@ rules:
     - error
 
   # Forbid unused variables
-  no-unused-vars-rest:
+  no-unused-vars:
     - error
     - args: none
       caughtErrors: none
