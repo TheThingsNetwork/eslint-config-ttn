@@ -19,7 +19,6 @@ plugins:
   - react
   - babel
   - import
-  - no-unused-vars-rest
 
 settings:
   import/resolver:
@@ -406,7 +405,7 @@ rules:
     - error
 
   # Forbid unused variables
-  no-unused-vars-rest/no-unused-vars:
+  no-unused-vars-rest:
     - error
     - args: none
       caughtErrors: none
