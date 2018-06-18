@@ -404,12 +404,12 @@ rules:
   no-unused-expressions:
     - error
 
-  # Forbid unused variables
+  # Disallow unused variables
   no-unused-vars:
     - error
     - args: none
       caughtErrors: none
-      ignoreDestructuredVarsWithRest: true
+      ignoreRestSiblings: true
 
   no-useless-call:
     - error
@@ -438,6 +438,7 @@ rules:
   no-use-before-define:
     - warn
     - functions: false
+      variables: false
 
   # Disallow var
   no-var:
@@ -572,9 +573,12 @@ rules:
   react/jsx-no-duplicate-props:
     - error
 
-  # Validate spacing before closing bracket in JSX (fixable)
-  react/jsx-space-before-closing:
+  # Make react spacing consistent
+  react/jsx-tag-spacing:
     - error
+    - closingSlash: never
+      beforeSelfClosing: always
+      afterOpening: never
 
   # Prevent React to be incorrectly marked as unused
   react/jsx-uses-react: 1
