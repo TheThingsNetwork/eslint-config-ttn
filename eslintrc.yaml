@@ -249,7 +249,7 @@ rules:
     - always
     - js: never
 
-  # Prefer defaul export for signle export
+  # Prefer defaul export for single export
   import/prefer-default-export:
     - warn
 
@@ -507,7 +507,7 @@ rules:
   # Specify whether backticks, double or single quotes should be used
   quotes:
     - error
-    - double
+    - single
     - avoidEscape: true
       allowTemplateLiterals: true
 
