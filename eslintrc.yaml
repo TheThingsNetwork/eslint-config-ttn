@@ -26,6 +26,8 @@ settings:
     eslint-config-ttn/resolver:
       alias:
         "~": src
+  react:
+    version: detect
 
 # enable all language features
 parserOptions:
