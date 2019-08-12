@@ -19,6 +19,7 @@ plugins:
   - react
   - babel
   - import
+  - react-hooks
 
 settings:
   import/resolver:
@@ -632,5 +633,11 @@ rules:
   yield-star-spacing:
     - error
     - both
+
+  # checks rules of hooks
+  react-hooks/rules-of-hooks: error
+
+  # checks effect dependencies
+  react-hooks/exhaustive-deps: warn
 
 # vim: ft=yaml
