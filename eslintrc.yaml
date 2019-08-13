@@ -19,12 +19,15 @@ plugins:
   - react
   - babel
   - import
+  - react-hooks
 
 settings:
   import/resolver:
     eslint-config-ttn/resolver:
       alias:
         "~": src
+  react:
+    version: detect
 
 # enable all language features
 parserOptions:
@@ -102,10 +105,7 @@ parserOptions:
 rules:
   # Handles destructuring arrays with flow type in function parameters
   array-bracket-spacing:
-    - error
-    - always
-    - arraysInArrays: false
-      objectsInArrays: false
+    - off
 
   # Enforce return statements in callbacks of array’s methods
   array-callback-return:
@@ -127,10 +127,7 @@ rules:
 
   # Correct spacing inside objects
   babel/object-curly-spacing:
-    - error
-    - always
-    - arraysInObjects: false
-      objectsInObjects: false
+    - off
 
   # Guard against awaiting async functions inside of a loop
   no-await-in-loop:
@@ -632,5 +629,11 @@ rules:
   yield-star-spacing:
     - error
     - both
+
+  # checks rules of hooks
+  react-hooks/rules-of-hooks: error
+
+  # checks effect dependencies
+  react-hooks/exhaustive-deps: warn
 
 # vim: ft=yaml
